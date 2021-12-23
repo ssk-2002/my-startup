@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- We are keepign all the contents in a container (built in class in Bootstrap), so that we can handle them easily
+    -> The d-flex class is used to trigger the flexbox
+    -> The 'align-items-center' is used to put all the items inside this container at the center
+    -> The h-100 is used to say- use the entire screen for this container -->
+    <div class="container d-flex align-items-center h-100">
+      <!-- We are using the row class to put all the contents inside this container in different rows -->
+      <div class="row">
+        <!-- We want the header to use the entire screen for putting the contents, that's why we used the highest value- 12 -->
+        <header class="text-center col-12">
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+        </header>
+        <!-- The buffer class (defined in style.css) creates a specified buffer b/w contents, and again for the entire column (col-12) -->
+        <div class="buffer col-12"></div>
+        <!-- The <section> tag defines a section in a document. -->
+        <section class="text-center col-12">
+          <hr>
+          <a href="https://mailchi.mp/02d9d8c22a5b/startup">
+            <!-- btn and btn-primary are Bootstrap classes, and btn-xl is user-defined -->
+            <button class="btn btn-primary btn-xl">Find out more</button>
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
